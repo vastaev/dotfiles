@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Label</key>
+    <string>com.johndoe.homebrewbackup.plist</string>
+    
+    <key>WorkingDirectory</key>
+    <string>/tmp/com.johndoe.homebrewbackup.plist</string>
+    
+    <key>ProgramArguments</key>
+    <array>
+      <string>~/.config/brew/homebrew_backup.sh</string>
+      <string>~/.config/brew/backups</string>
+    </array>
+    
+    <key>Nice</key>
+    <integer>1</integer>
+    
+    <key>StartInterval</key>
+    <!-- every 24 hours -->
+    <integer>86400</integer>
+    
+    <key>RunAtLoad</key>
+    <true />
+    
+    <key>StandardErrorPath</key>
+    <string>/tmp/com.johndoe.homebrewbackup.plist/homebrewbackup.err</string>
+    
+    <key>StandardOutPath</key>
+    <string>/tmp/com.johndoe.homebrewbackup.plist/homebrewbackup.out</string>
+  </dict>
+</plist>
+
