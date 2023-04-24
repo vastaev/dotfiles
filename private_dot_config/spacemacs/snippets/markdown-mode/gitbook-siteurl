@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-#name : gitbook-siteurl
-#key : gitbook-siteurl
-#contributor : John Stevenson
-# --
-{{book.url}}$0

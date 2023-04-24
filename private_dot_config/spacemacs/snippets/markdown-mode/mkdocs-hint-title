@@ -1,8 +1,0 @@
-# -*- mode: snippet -*-
-# name: mkdocs-hint-title
-# key: mkdocs-hint-title
-#contributor : practicalli
-# --
-!!! HINT "${1:Optional Title}"
-    ${2:Body of hint indented by 4 characters}$0
-

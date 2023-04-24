@@ -1,9 +1,0 @@
-# -*- mode: snippet -*-
-#name : 4clojure-heading
-#key : 4clojure-heading
-#contributor : practicalli
-# --
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; $1
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-$0
