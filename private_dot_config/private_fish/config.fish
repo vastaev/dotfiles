@@ -14,8 +14,8 @@ set -xU SPACEMACSDIR $XDG_CONFIG_HOME/spacemacs
 starship init fish | source
 
 # asdf
-source /usr/local/opt/asdf/libexec/asdf.fish
-. ~/.asdf/plugins/java/set-java-home.fish
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+#. ~/.asdf/plugins/java/set-java-home.fish
 
 if status is-interactive
   #auto-warpify
@@ -24,4 +24,3 @@ end
 
 # direnv hook
 direnv hook fish | source
-
