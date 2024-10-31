@@ -1,5 +1,3 @@
-require("me")
-print("hello")
-
-vim.o.background = "dark" -- or "light" for light mode
-vim.cmd([[colorscheme gruvbox]])
+require("config.set")
+require("config.remap")
+require("config.lazy")
