@@ -24,3 +24,12 @@ end
 
 # direnv hook
 direnv hook fish | source
+
+# fzf
+fzf --fish | source
+
+# go env
+set -xU GOPATH (go env GOPATH)
+set -xU PATH $PATH (go env GOPATH)/bin
+set -xU GOBIN (go env GOPATH)/bin
+
