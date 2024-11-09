@@ -10,7 +10,7 @@ set -xU EDITOR "nvim"
 # spacemacs
 set -xU SPACEMACSDIR $XDG_CONFIG_HOME/spacemacs
 
-# starship launch
+# starship 
 starship init fish | source
 
 # asdf
@@ -32,4 +32,3 @@ fzf --fish | source
 set -xU GOPATH (go env GOPATH)
 set -xU PATH $PATH (go env GOPATH)/bin
 set -xU GOBIN (go env GOPATH)/bin
-
