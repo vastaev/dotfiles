@@ -17,10 +17,10 @@ starship init fish | source
 source /opt/homebrew/opt/asdf/libexec/asdf.fish
 #. ~/.asdf/plugins/java/set-java-home.fish
 
-if status is-interactive
-  #auto-warpify
-  printf '\eP$f{"hook": "SourcedRcFileForWarp", "value": { "shell": "fish"}}\x9c'
-end
+# if status is-interactive
+#   #auto-warpify
+#   printf '\eP$f{"hook": "SourcedRcFileForWarp", "value": { "shell": "fish"}}\x9c'
+# end
 
 # direnv hook
 direnv hook fish | source
