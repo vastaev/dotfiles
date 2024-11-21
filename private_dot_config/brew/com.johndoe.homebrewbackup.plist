@@ -19,7 +19,7 @@
     
     <key>StartInterval</key>
     <!-- every 24 hours -->
-    <integer>86400</integer>
+    <integer>21600</integer>
     
     <key>RunAtLoad</key>
     <true />

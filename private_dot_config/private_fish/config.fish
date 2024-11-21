@@ -1,15 +1,3 @@
-# XDG vars
-set -xU XDG_CONFIG_HOME $HOME/.config
-set -xU XDG_DATA_HOME $HOME/.local/share
-set -xU XDG_STATE_HOME $HOME/.local/state
-set -xU XDG_CACHE_HOME $HOME/.cache
-
-# editor
-set -xU EDITOR "nvim"
-
-# spacemacs
-set -xU SPACEMACSDIR $XDG_CONFIG_HOME/spacemacs
-
 # starship 
 starship init fish | source
 
@@ -28,7 +16,7 @@ direnv hook fish | source
 # fzf
 fzf --fish | source
 
-# go env
-set -xU GOPATH (go env GOPATH)
-set -xU PATH $PATH (go env GOPATH)/bin
-set -xU GOBIN (go env GOPATH)/bin
+# zoxide
+zoxide init fish --cmd c | source
+
+
