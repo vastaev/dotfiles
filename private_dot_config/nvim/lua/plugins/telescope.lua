@@ -44,6 +44,9 @@ return {
         telescope.load_extension("fzf")
         telescope.load_extension("noice")
         telescope.load_extension("file_browser")
+        telescope.load_extension('chezmoi')
+        vim.keymap.set('n', '<leader>cz', telescope.extensions.chezmoi.find_files, {})
+
 
         local builtin = require("telescope.builtin")
 
@@ -55,6 +58,7 @@ return {
         map("n", "-", ":Telescope file_browser<CR>")
 
         map("n", "<leader>ff", builtin.find_files, opts) -- Lists files in your current working directory, respects .gitignore
+        map("n", "<leader>fb", builtin.buffers, opts)
         map("n", "<leader>fx", builtin.treesitter, opts) -- Lists tree-sitter symbols
         map("n", "<leader>fs", builtin.spell_suggest, opts) -- Lists spell options
     end
