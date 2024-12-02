@@ -8,4 +8,8 @@
         {:des   "caps_lock to esc when pressed alone, to ctrl as modifier"
          :rules [[:##caps_lock :left_control nil {:alone :escape}]]}
 
+        {:des "fn -> lCtrl + space"
+         :rules [[:##fn :fn nil {:alone :!Wspacebar} ]]}
         ]}
+
+;; docs - https://github.com/yqrashawn/GokuRakuJoudo/blob/master/tutorial.md 
