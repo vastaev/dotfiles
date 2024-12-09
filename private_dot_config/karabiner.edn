@@ -9,7 +9,10 @@
          :rules [[:##caps_lock :left_control nil {:alone :escape}]]}
 
         {:des "fn -> lCtrl + space"
-         :rules [[:##fn :fn nil {:alone :!Wspacebar} ]]}
+         :rules [[:##fn :fn nil {:alone :!Wspacebar}]]}
+
+        {:des "left shift -> lCtrl + space"
+         :rules [[:##left_shift :left_shift nil {:alone :!Wspacebar}]]}
         ]}
 
 ;; docs - https://github.com/yqrashawn/GokuRakuJoudo/blob/master/tutorial.md 
