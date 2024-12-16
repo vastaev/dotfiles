@@ -6,3 +6,4 @@ export XDG_CACHE_HOME=$HOME/.cache
 export ZDOTDIR=$XDG_CONFIG_HOME/zsh
 
 export SPACEMACSDIR="$XDG_CONFIG_HOME/spacemacs"
+. "$HOME/.cargo/env"
