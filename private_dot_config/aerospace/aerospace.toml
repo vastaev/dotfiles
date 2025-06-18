@@ -121,6 +121,7 @@ alt-s = 'workspace S' #spotify
 alt-b = 'workspace B' #browser
 alt-m = 'workspace M' #messenger
 alt-t = 'workspace T' #terminal
+alt-o = 'workspace O' #obsidian
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 alt-shift-1 = 'move-node-to-workspace 1'
@@ -151,7 +152,7 @@ f = [
 ] # Toggle between floating and tiling layout
 backspace = ['close-all-windows-but-current', 'mode main']
 
-# sticky is not yet supported https://github.com/nikitabobko/AeroSpace/issues/2
+# sticky is not yet supported https://github.com/nikitabo
 #s = ['layout sticky tiling', 'mode main']
 
 alt-shift-h = ['join-with left', 'mode main']
@@ -174,6 +175,10 @@ run = "move-node-to-workspace M"
 [[on-window-detected]]
 if.app-id = 'com.brave.Browser'
 run = "move-node-to-workspace B"
+
+[[on-window-detected]]
+if.app-id = 'md.obsidian'
+run = "move-node-to-workspace O"
 
 [workspace-to-monitor-force-assignment]
 B = 'secondary'
