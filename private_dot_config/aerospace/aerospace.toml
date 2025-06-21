@@ -181,4 +181,5 @@ if.app-id = 'md.obsidian'
 run = "move-node-to-workspace O"
 
 [workspace-to-monitor-force-assignment]
+2 = 'secondary'
 B = 'secondary'
