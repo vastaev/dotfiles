@@ -117,11 +117,12 @@ alt-shift-equal = 'resize smart +50'
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
 alt-1 = 'workspace 1'
 alt-2 = 'workspace 2'
-alt-s = 'workspace S' #spotify
+alt-s = 'workspace S' #music
 alt-b = 'workspace B' #browser
 alt-m = 'workspace M' #messenger
 alt-t = 'workspace T' #terminal
 alt-o = 'workspace O' #obsidian
+alt-d = 'workspace D' #discord
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 alt-shift-1 = 'move-node-to-workspace 1'
@@ -160,25 +161,39 @@ alt-shift-j = ['join-with down', 'mode main']
 alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
 
+#Terminal
 [[on-window-detected]]
 if.app-id = 'com.mitchellh.ghostty'
 run = "move-node-to-workspace T"
 
+#Music
 [[on-window-detected]]
 if.app-id = 'com.spotify.client'
 run = "move-node-to-workspace S"
+[[on-window-detected]]
+if.app-id = 'com.github.th-ch.youtube-music'
+run = "move-node-to-workspace S"
 
+#Messenger
 [[on-window-detected]]
 if.app-id = 'com.tdesktop.Telegram'
 run = "move-node-to-workspace M"
 
+#Browsers
 [[on-window-detected]]
 if.app-id = 'com.brave.Browser'
+run = "move-node-to-workspace B"
+[[on-window-detected]]
+if.app-id = 'org.mozilla.firefox'
 run = "move-node-to-workspace B"
 
 [[on-window-detected]]
 if.app-id = 'md.obsidian'
 run = "move-node-to-workspace O"
+
+[[on-window-detected]]
+if.app-id = 'com.hnc.Discord'
+run = "move-node-to-workspace D"
 
 [workspace-to-monitor-force-assignment]
 2 = 'secondary'
